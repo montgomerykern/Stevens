@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Stevens Law | North Myrtle Beach | Legal Firm </title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slf.css" />
+</head>
+
+<body class="uk-background-secondary" style="visibility: hidden;">
+
+    <!-- Helper script to wait for page to load before displaying body -->
+    <script>
+        // Helper function
+        let domReady = (cb) => {
+            document.readyState === 'interactive' || document.readyState === 'complete'
+                ? cb()
+                : document.addEventListener('DOMContentLoaded', cb);
+        };
+
+        domReady(() => {
+            // Display body when DOM is loaded
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+    <!-- Sticky navbar -->
+    <div class="uk-position-top" id="top">
+        <nav class="uk-navbar-container uk-animation-fade uk-navbar-transparent uk-light"
+            data-uk-navbar="dropbar: false;" data-uk-sticky="animation: uk-animation-slide-top; 
+                           sel-target: .uk-navbar-container; 
+                           cls-active: uk-navbar-sticky; 
+                           cls-inactive: uk-navbar-transparent uk-light; top: 0">
+            <!-- LEFT -->
+            <div style="margin-left:30px" class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo uk-animation-fade" href="/"><img
+                        src="/assets/images/services-02-legal-advisory.svg" width="80" height="60" alt=""
+                        loading="eager"
+                        uk-svg="stroke-animation: true; attributes: uk-scrollspy-class:uk-animation-stroke"
+                        class="uk-text-primary el-image" hidden=""><svg xmlns="http://www.w3.org/2000/svg" width="70"
+                        height="50" viewBox="0 0 80 60" class="uk-text-primary el-image uk-svg uk-scrollspy-inview"
+                        uk-scrollspy-class="uk-animation-stroke" style="--uk-animation-stroke: 81px;">
+                        <path fill="none" stroke="#b7a088" stroke-width="2" stroke-linecap="square"
+                            stroke-miterlimit="10" d="M21 18s6.67-4.5 18.5-4.5S57 18 57 18M39 12v43"></path>
+                        <path fill="#b7a088" d="M53 56.5H26V55l12-4h2l13 4"></path>
+                        <path fill="none" stroke="#b7a088" stroke-width="2" stroke-linecap="square"
+                            stroke-miterlimit="10"
+                            d="M65.03 39.5c-.2 4.26-3.72 7.67-8.03 7.67s-7.83-3.41-8.02-7.67h16.05z">
+                        </path>
+                        <path fill="none" stroke="#b7a088" stroke-width="2" stroke-linecap="square"
+                            stroke-miterlimit="10" d="M63.98 39L57 18.5 49.97 39" stroke-linejoin="round"></path>
+                        <path fill="none" stroke="#b7a088" stroke-width="2" stroke-linecap="square"
+                            stroke-miterlimit="10"
+                            d="M29.03 39.5c-.2 4.26-3.72 7.67-8.03 7.67s-7.83-3.41-8.02-7.67h16.05z">
+                        </path>
+                        <path fill="none" stroke="#b7a088" stroke-width="2" stroke-linecap="square"
+                            stroke-miterlimit="10" d="M27.98 39L21 18.5 13.97 39" stroke-linejoin="round"></path>
+                        <circle cx="39" cy="11.5" r="4.5" fill="#b7a088"></circle>
+                        <circle cx="21" cy="18" r="2.5" fill="#b7a088"></circle>
+                        <circle cx="57" cy="18" r="2.5" fill="#b7a088"></circle>
+                        <circle cx="39" cy="6.5" r="2.5" fill="#b7a088"></circle>
+                    </svg>Stevens Law Firm</a>
+                <!-- show ul on desktop-tablet with uk-visible@m = Only affects device widths of 960px and larger-->
+                <ul class="uk-navbar-nav uk-navbar-center uk-visible@m">
+                    <li class="uk-active"><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">About Us</a>
+                        <!-- <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>-->
+                    </li>
+                    <li><a href="#">Practice Areas</a></li>
+                    <li><a href="#"> Resources</a></li>
+                    <li><a href="#"> Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- social icons - hide on mobile -->
+            <div style="margin-right:50px" class="uk-navbar-right">
+                <div class="uk-navbar-item  uk-visible@m">
+                    <a title="LinkedIn" href="https://www.linkedin.com/company/stevens-law-firm-pc"
+                        class="uk-icon-button uk-margin-small-right" uk-icon="linkedin"></a>
+                    <a uk-tooltip="title: Facebook; pos: bottom-center" title="Facebook"
+                        href="https://www.facebook.com/stevenslawfirmSC" class="uk-icon-button  uk-margin-small-right"
+                        uk-icon="facebook"></a>
+                    <a title="Google Plus" href="" class="uk-icon-button" uk-icon="instagram"></a>
+                </div>
+            </div>
+            <!-- search input 
+            <div style="margin-right:50px" id="search" class="uk-navbar-item uk-visible@m">
+                <form action="javascript:void(0)">
+                    <div class="uk-inline">
+                        <a class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></a>
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Search...">
+                    </div>
+                </form>
+            </div> -->
+            <!--off-canvas trigger hamburger btn. show only on mobile -->
+            <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left uk-margin-small-right">Menu</span>
+            </a>
+
+        </nav>
+    </div>
+    <!-- OFF-CANVAS NAVBAR (Trigger by hamburger btn)
+    modes: push / slide / reveal /none 
+    -->
+    <nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: true">
+        <!-- offcanvas setting  -->
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-offcanvas-bar-animation uk-offcanvas-slide" role="dialog"
+            aria-modal="true" style="max-width: 768px;">
+
+            <button class="uk-offcanvas-close uk-close-large uk-icon uk-close" type="button" uk-close=""
+                uk-toggle="cls: uk-close-large; mode: media; media: @s" aria-label="Close"></button>
+
+            <div class="uk-margin-auto-bottom">
+
+                <div class="uk-grid uk-child-width-1-1 uk-grid-stack" uk-grid="">
+                    <div class="uk-first-column">
+                        <div class="uk-panel" id="module-tm-4">
+
+                        </div>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                        <div class="uk-panel" id="module-menu-dialog-mobile">
+                            <ul class="uk-nav uk-nav-default uk-nav-divider uk-nav-accordion"
+                                uk-nav="targets: > .js-accordion">
+
+                                <li class="item-170 uk-active"><a href="#"> Home</a></li>
+                                <li class="item-171 js-accordion uk-parent"><a href="" id="uk-nav-1" role="button"
+                                        aria-controls="uk-nav-2" aria-expanded="false" aria-disabled="false"> About Us
+                                        <span uk-nav-parent-icon="" class="uk-icon uk-nav-parent-icon"></span></a>
+                                    <ul class="uk-nav-sub" hidden="" id="uk-nav-2" role="region"
+                                        aria-labelledby="uk-nav-1">
+
+                                        <li class="item-260" role="presentation"><a
+                                                href="/joomla/themes/paladin/politics">
+                                                Politics</a></li>
+                                        <li class="item-172" role="presentation"><a
+                                                href="/joomla/themes/paladin/politics/environment"> Environment</a></li>
+                                        <li class="item-173" role="presentation"><a
+                                                href="/joomla/themes/paladin/politics/health"> Health</a></li>
+                                        <li class="item-174" role="presentation"><a
+                                                href="/joomla/themes/paladin/politics/education"> Education</a></li>
+                                        <li class="item-175" role="presentation"><a
+                                                href="/joomla/themes/paladin/politics/economy"> Economy</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item-181 js-accordion uk-parent"><a href="" id="uk-nav-3" role="button"
+                                        aria-controls="uk-nav-4" aria-expanded="false" aria-disabled="false"> Attorneys
+                                        <span uk-nav-parent-icon="" class="uk-icon uk-nav-parent-icon"></span></a>
+                                    <ul class="uk-nav-sub" hidden="" id="uk-nav-4" role="region"
+                                        aria-labelledby="uk-nav-3">
+
+                                        <li class="item-261" role="presentation"><a
+                                                href="/joomla/themes/paladin/sports">
+                                                Sports</a></li>
+                                        <li class="item-182" role="presentation"><a
+                                                href="/joomla/themes/paladin/sports/martial-arts"> Martial Arts</a></li>
+                                        <li class="item-183" role="presentation"><a
+                                                href="/joomla/themes/paladin/sports/motorsports"> Motorsports</a></li>
+                                        <li class="item-184" role="presentation"><a
+                                                href="/joomla/themes/paladin/sports/baseball"> Baseball</a></li>
+                                        <li class="item-185" role="presentation"><a
+                                                href="/joomla/themes/paladin/sports/football"> Football</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item-190 js-accordion uk-parent"><a href="" id="uk-nav-5" role="button"
+                                        aria-controls="uk-nav-6" aria-expanded="false" aria-disabled="false"> Practice
+                                        Areas
+                                        <span uk-nav-parent-icon="" class="uk-icon uk-nav-parent-icon"></span></a>
+                                    <ul class="uk-nav-sub" hidden="" id="uk-nav-6" role="region"
+                                        aria-labelledby="uk-nav-5">
+
+                                        <li class="item-262" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology"> Technology</a></li>
+                                        <li class="item-191" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology/multimedia"> Multimedia</a></li>
+                                        <li class="item-192" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology/transportation">
+                                                Transportation</a></li>
+                                        <li class="item-193" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology/electronics"> Electronics</a>
+                                        </li>
+                                        <li class="item-195" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology/innovation"> Innovation</a></li>
+                                        <li class="item-196" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology/reviews"> Reviews</a></li>
+                                        <li class="item-197" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology/security"> Security</a></li>
+                                        <li class="item-198" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology/gaming"> Gaming</a></li>
+                                        <li class="item-276" role="presentation"><a
+                                                href="/joomla/themes/paladin/technology/technology-archive"> Archive</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item-194 js-accordion uk-parent"><a href="" id="uk-nav-7" role="button"
+                                        aria-controls="uk-nav-8" aria-expanded="false" aria-disabled="false"> Resources
+                                        <span uk-nav-parent-icon="" class="uk-icon uk-nav-parent-icon"></span></a>
+                                    <ul class="uk-nav-sub" hidden="" id="uk-nav-8" role="region"
+                                        aria-labelledby="uk-nav-7">
+
+                                        <li class="item-263" role="presentation"><a
+                                                href="/joomla/themes/paladin/science">
+                                                Science</a></li>
+                                        <li class="item-199" role="presentation"><a
+                                                href="/joomla/themes/paladin/science/space-cosmos"> Space &amp;
+                                                Cosmos</a></li>
+                                        <li class="item-200" role="presentation"><a
+                                                href="/joomla/themes/paladin/science/animal-world"> Animal World</a>
+                                        </li>
+                                        <li class="item-201" role="presentation"><a
+                                                href="/joomla/themes/paladin/science/our-climate"> Our Climate</a></li>
+                                        <li class="item-202" role="presentation"><a
+                                                href="/joomla/themes/paladin/science/human-health"> Human &amp;
+                                                Health</a></li>
+                                        <li class="item-203" role="presentation"><a
+                                                href="/joomla/themes/paladin/science/physics-tech"> Physics &amp;
+                                                Tech</a></li>
+                                        <li class="item-204" role="presentation"><a
+                                                href="/joomla/themes/paladin/science/environment"> Environment</a></li>
+                                        <li class="item-205" role="presentation"><a
+                                                href="/joomla/themes/paladin/science/humanities"> Humanities</a></li>
+                                        <li class="item-277" role="presentation"><a
+                                                href="/joomla/themes/paladin/science/science-archive"> Archive</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                        <div class="uk-panel" id="module-104">
+
+
+
+                            <div class="uk-grid tm-grid-expand uk-grid-small uk-margin-xlarge" uk-grid="">
+                                <div class="uk-width-1-2 uk-first-column">
+
+
+
+
+
+
+
+                                    <div class="uk-margin-large">
+
+
+
+
+                                        <a class="el-content uk-width-1-1 uk-button uk-button-default" href="#"
+                                            uk-scroll="">
+
+                                            Subscribe
+
+                                        </a>
+
+
+
+
+                                    </div>
+
+
+
+
+
+                                </div>
+                                <div class="uk-width-1-2">
+
+
+
+
+
+
+
+                                    <div class="uk-margin-large">
+
+
+
+
+                                        <a class="el-content uk-width-1-1 uk-button uk-button-default" href="#"
+                                            uk-scroll="">
+
+                                            Sign Up
+
+                                        </a>
+
+
+
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+                                <div class="uk-width-1-1">
+
+
+                                    <div class="uk-margin" uk-scrollspy="target: [uk-scrollspy-class];">
+                                        <a class="el-link" href="/joomla/themes/paladin/"><img
+                                                src="/demo/paladin/images/logo.svg" width="140" height="23"
+                                                class="el-image uk-text-emphasis" alt="" loading="lazy" uk-svg=""
+                                                hidden=""><svg xmlns="http://www.w3.org/2000/svg" width="140"
+                                                height="23" viewBox="0 0 300 50"
+                                                class="el-image uk-text-emphasis uk-svg">
+                                                <path fill="#111"
+                                                    d="M64.55,48.25c0,.27-.09.4-.26.4-1.06,0-1.9,0-2.52-.07l-3.57-.06-3.64.06c-.66.05-1.52.07-2.58.07-.08,0-.13-.13-.13-.4s0-.4.13-.4c1.68,0,2.78-.29,3.31-.89s.79-1.82.79-3.67V33q0-3.82-1.45-5.72a5.34,5.34,0,0,0-4.5-1.88,8.9,8.9,0,0,0-4,1,13.06,13.06,0,0,0-3.7,2.81V43.29c0,1.85.27,3.08.79,3.67s1.61.89,3.24.89c.18,0,.27.14.27.4s-.09.4-.27.4c-1.05,0-1.89,0-2.51-.07l-3.57-.06-3.64.06c-.66.05-1.52.07-2.58.07-.09,0-.13-.13-.13-.4s0-.4.13-.4c1.68,0,2.78-.29,3.31-.89s.79-1.82.79-3.67V9.36c0-.57-.33-.86-1-.86H26.92a16.82,16.82,0,0,0-3.8.3A2.28,2.28,0,0,0,21.53,10a6.74,6.74,0,0,0-.43,2.84V43.29a7.51,7.51,0,0,0,.43,3,2.38,2.38,0,0,0,1.72,1.25,18.35,18.35,0,0,0,4.13.33c.09,0,.13.14.13.4s0,.4-.13.4c-1.5,0-2.69,0-3.57-.07l-5.23-.06-5,.06c-.88.05-2.12.07-3.71.07-.08,0-.13-.13-.13-.4s0-.4.13-.4A18.58,18.58,0,0,0,14,47.52a2.5,2.5,0,0,0,1.78-1.29,7,7,0,0,0,.46-2.94V12.67a6.52,6.52,0,0,0-.43-2.81,2.18,2.18,0,0,0-1.58-1.09,19.25,19.25,0,0,0-3.87-.27A8.54,8.54,0,0,0,4,10.72C2.52,12.2,1.46,14.63.79,18c0,.13-.18.18-.43.16S0,18.12,0,18c.18-1.24.37-3.22.6-6s.33-4.8.33-6.21q0-.33.39-.33c.27,0,.4.11.4.33,0,1,1.19,1.45,3.57,1.45s7,.13,13.29.13,10.65,0,12.77-.13a12.74,12.74,0,0,0,6.71-1.85A8.18,8.18,0,0,0,41.53.7c0-.13.14-.2.4-.2a.94.94,0,0,1,.37.07.22.22,0,0,1,.16.19V28a18.78,18.78,0,0,1,5-4.23,10.64,10.64,0,0,1,5.23-1.39,7.33,7.33,0,0,1,5.58,2.12,8.36,8.36,0,0,1,2,6V43.29c0,1.85.27,3.08.8,3.67s1.6.89,3.24.89C64.46,47.85,64.55,48,64.55,48.25Zm25.27-3.44a.46.46,0,0,1,.36.23.35.35,0,0,1,0,.43,14.31,14.31,0,0,1-9.79,4,12.27,12.27,0,0,1-6.68-1.75A11.43,11.43,0,0,1,69.51,43a14.12,14.12,0,0,1,12.7-20.47,8,8,0,0,1,5.85,2,7.38,7.38,0,0,1,2,5.58c0,1.19-.26,1.79-.79,1.79L73,31.92c-.09,1-.13,1.71-.13,2.24q0,5.76,2.71,9.26a9.12,9.12,0,0,0,7.67,3.51,9.79,9.79,0,0,0,3.34-.5,19.27,19.27,0,0,0,3.21-1.62ZM75.4,25.73A9.6,9.6,0,0,0,73.08,31l12-.27a8.22,8.22,0,0,0-1.36-5.12A4.52,4.52,0,0,0,80,23.85,6,6,0,0,0,75.4,25.73ZM121.76,46.1a3.13,3.13,0,0,0,2.12,1.36,22.69,22.69,0,0,0,5,.39c.13,0,.19.14.19.4s-.06.4-.19.4c-1.81,0-3.22,0-4.24-.07l-5.75-.06-4.5.06c-.79.05-1.92.07-3.37.07-.13,0-.2-.13-.2-.4s.07-.4.2-.4a13.47,13.47,0,0,0,3.5-.33A2.2,2.2,0,0,0,116,46.23a8,8,0,0,0,.4-2.94V12.67a7.78,7.78,0,0,0-.4-2.91,2.29,2.29,0,0,0-1.52-1.29,12.39,12.39,0,0,0-3.5-.36c-.13,0-.2-.14-.2-.4s.07-.4.2-.4l3.37.07c1.85.09,3.33.13,4.43.13s2.32-.07,3.77-.2c.53,0,1.36,0,2.48-.1s2.11-.1,3-.1q6.15,0,9.88,2.75t3.74,8.3a12.08,12.08,0,0,1-2.15,7.27A13.06,13.06,0,0,1,134,29.87a17.14,17.14,0,0,1-6.91,1.45,13.58,13.58,0,0,1-3.24-.33c-.09,0-.13-.11-.13-.33a.85.85,0,0,1,.1-.4c.06-.13.14-.17.23-.13a8.85,8.85,0,0,0,2.31.26,9.44,9.44,0,0,0,7-2.84c1.89-1.89,2.84-4.63,2.84-8.2s-.9-6.22-2.71-8.2a9.19,9.19,0,0,0-7.14-3,12,12,0,0,0-3.18.3,2.2,2.2,0,0,0-1.42,1.26,8,8,0,0,0-.43,3.07V43A6.7,6.7,0,0,0,121.76,46.1Zm48.08-1a.32.32,0,0,1,.33.29.34.34,0,0,1-.2.43L163.16,49a1.28,1.28,0,0,1-.59.14c-.58,0-1.1-.39-1.56-1.16a8.38,8.38,0,0,1-1-3.14l-3.3,2.18a12.46,12.46,0,0,1-2.88,1.59,8.06,8.06,0,0,1-2.75.46,5.53,5.53,0,0,1-3.9-1.29,4.29,4.29,0,0,1-1.39-3.27A4.47,4.47,0,0,1,147.52,41a18.65,18.65,0,0,1,5.39-2.81L160,35.62V31.25a12.13,12.13,0,0,0-1-5.75,3.27,3.27,0,0,0-3-1.79,3.83,3.83,0,0,0-3.3,1.53,7.85,7.85,0,0,0-1.46,3.43c-.26,1.95-1.17,2.91-2.71,2.91a2.42,2.42,0,0,1-1.79-.59,2,2,0,0,1-.59-1.46c0-1.1.69-2.2,2.08-3.3a17.57,17.57,0,0,1,5-2.71,15.5,15.5,0,0,1,5.19-1.06,5.2,5.2,0,0,1,4.2,1.75,7.64,7.64,0,0,1,1.49,5.06V41.51a6.63,6.63,0,0,0,.63,3.3,2.08,2.08,0,0,0,1.95,1.06,8.15,8.15,0,0,0,3-.79ZM160,43.89V36.54l-5.56,2.25a7.32,7.32,0,0,0-2.71,1.62,3.34,3.34,0,0,0-.93,2.42,3.5,3.5,0,0,0,1,2.61,3.54,3.54,0,0,0,2.61,1,5.91,5.91,0,0,0,3-1Zm12.5,4.36c0-.26.06-.4.2-.4,1.63,0,2.71-.29,3.24-.89s.79-1.82.79-3.67V9.23a9.84,9.84,0,0,0-.43-3.44,1.57,1.57,0,0,0-1.55-1.06,7.93,7.93,0,0,0-3,.93h-.07c-.17,0-.32-.12-.43-.37s-.07-.38.1-.43l8.73-4.1.27-.06a.78.78,0,0,1,.46.2.51.51,0,0,1,.26.39v42c0,1.85.26,3.08.77,3.67s1.59.89,3.27.89c.13,0,.2.14.2.4s-.07.4-.2.4c-1.06,0-1.92,0-2.58-.07l-3.64-.06-3.7.06c-.62.05-1.46.07-2.51.07C172.55,48.65,172.49,48.52,172.49,48.25Zm42.32-3.17a.33.33,0,0,1,.34.29.36.36,0,0,1-.2.43L208.13,49a1.25,1.25,0,0,1-.59.14c-.57,0-1.09-.39-1.55-1.16a8,8,0,0,1-1-3.14l-3.31,2.18a12.46,12.46,0,0,1-2.88,1.59,8,8,0,0,1-2.74.46,5.49,5.49,0,0,1-3.9-1.29,4.26,4.26,0,0,1-1.39-3.27A4.46,4.46,0,0,1,192.49,41a18.79,18.79,0,0,1,5.39-2.81L205,35.62V31.25a12,12,0,0,0-1-5.75,3.27,3.27,0,0,0-3-1.79,3.84,3.84,0,0,0-3.31,1.53,8,8,0,0,0-1.46,3.43c-.26,1.95-1.17,2.91-2.71,2.91a2.39,2.39,0,0,1-1.78-.59,2,2,0,0,1-.6-1.46c0-1.1.7-2.2,2.08-3.3a17.57,17.57,0,0,1,5-2.71,15.5,15.5,0,0,1,5.19-1.06,5.2,5.2,0,0,1,4.2,1.75,7.64,7.64,0,0,1,1.49,5.06V41.51a6.63,6.63,0,0,0,.63,3.3,2.1,2.1,0,0,0,1.95,1.06,8.11,8.11,0,0,0,3-.79ZM205,43.89V36.54l-5.56,2.25a7.32,7.32,0,0,0-2.71,1.62,3.34,3.34,0,0,0-.92,2.42,3.53,3.53,0,0,0,1,2.61,3.57,3.57,0,0,0,2.61,1,5.85,5.85,0,0,0,3-1Zm43.58.92c.14,0,.25.11.34.33s.06.36-.07.4l-7.61,3.64a2.46,2.46,0,0,1-.46.13c-.57,0-1.06-.46-1.45-1.39a11,11,0,0,1-.67-3.9,23.23,23.23,0,0,1-5,4,11.54,11.54,0,0,1-5.82,1.52A9.25,9.25,0,0,1,222.62,48a10.74,10.74,0,0,1-3.8-4.46,15,15,0,0,1-1.43-6.68,13.54,13.54,0,0,1,2.32-8,14.45,14.45,0,0,1,5.82-4.89,16.58,16.58,0,0,1,7-1.62,12.25,12.25,0,0,1,6.08,1.52V9.23a9,9,0,0,0-.46-3.41,1.67,1.67,0,0,0-1.65-1,9,9,0,0,0-2.91.86h-.13a.38.38,0,0,1-.37-.3c-.06-.2,0-.34.1-.43L241.8.76a.81.81,0,0,1,.33-.06.67.67,0,0,1,.43.2.55.55,0,0,1,.23.39v40a8,8,0,0,0,.53,3.4,1.84,1.84,0,0,0,1.79,1,6.67,6.67,0,0,0,3.3-.93ZM234.76,45.9a16.65,16.65,0,0,0,3.86-3.07V28a11,11,0,0,0-3.3-3.24,8.38,8.38,0,0,0-4.43-1.12,7.82,7.82,0,0,0-6.39,2.88q-2.34,2.87-2.34,8.3a15,15,0,0,0,2.34,8.82A7.12,7.12,0,0,0,230.55,47,8.5,8.5,0,0,0,234.76,45.9Zm17.36,2.35c0-.26.06-.4.19-.4,1.64,0,2.72-.29,3.24-.89s.8-1.82.8-3.67V31a9.18,9.18,0,0,0-.46-3.37,1.66,1.66,0,0,0-1.66-1.06,6.85,6.85,0,0,0-2.91.92h-.06c-.18,0-.31-.11-.4-.33s-.05-.37.13-.46l8.8-4.1.26-.07a.7.7,0,0,1,.43.2.53.53,0,0,1,.23.4q0,.46-.06,2.64c0,1.46-.07,3.18-.07,5.16V43.29a10.32,10.32,0,0,0,.3,2.88A2,2,0,0,0,262,47.49a7,7,0,0,0,2.58.36c.13,0,.19.14.19.4s-.06.4-.19.4c-1.11,0-2,0-2.58-.07l-3.57-.06-3.71.06c-.62.05-1.43.07-2.45.07C252.18,48.65,252.12,48.52,252.12,48.25Zm3.6-34.06a3,3,0,0,1-.83-2.25,2.78,2.78,0,0,1,.83-2.11A3.15,3.15,0,0,1,258,9a2.94,2.94,0,0,1,2.18.8,2.83,2.83,0,0,1,.8,2.11,3,3,0,0,1-.8,2.25A2.93,2.93,0,0,1,258,15,3.15,3.15,0,0,1,255.72,14.19ZM300,48.25c0,.27-.07.4-.2.4-1.1,0-2,0-2.58-.07l-3.57-.06-3.57.06c-.62.05-1.46.07-2.51.07-.14,0-.2-.13-.2-.4s.06-.4.2-.4a6.73,6.73,0,0,0,2.54-.36,2,2,0,0,0,1.13-1.32,10.8,10.8,0,0,0,.29-2.88V32.78q0-3.84-1.42-5.66a5.41,5.41,0,0,0-4.53-1.82,8.86,8.86,0,0,0-3.93,1A12.42,12.42,0,0,0,278,29.07V43.29a10.4,10.4,0,0,0,.29,2.88,2,2,0,0,0,1.16,1.32,7,7,0,0,0,2.58.36c.13,0,.2.14.2.4s-.07.4-.2.4c-1.1,0-2,0-2.58-.07l-3.57-.06-3.57.06c-.62.05-1.46.07-2.52.07-.13,0-.19-.13-.19-.4s.06-.4.19-.4a6.76,6.76,0,0,0,2.55-.36,2,2,0,0,0,1.12-1.32,10.32,10.32,0,0,0,.3-2.88v-13a7,7,0,0,0-.53-3.18,1.8,1.8,0,0,0-1.72-1,11.63,11.63,0,0,0-3.5,1h-.07a.42.42,0,0,1-.39-.29c-.09-.2,0-.35.13-.43l7.93-3.84.4-.07c.44,0,.87.5,1.29,1.49A11.17,11.17,0,0,1,278,28c3.21-3.79,6.59-5.69,10.11-5.69a7.42,7.42,0,0,1,5.66,2.12,8.38,8.38,0,0,1,2,6v12.9a10.8,10.8,0,0,0,.29,2.88,2,2,0,0,0,1.16,1.32,7,7,0,0,0,2.58.36C299.93,47.85,300,48,300,48.25Z">
+                                                </path>
+                                            </svg></a>
+
+                                    </div>
+                                    <div>
+
+
+
+                                        <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">
+                                            <li class="el-item ">
+                                                <a class="el-link" href="#" uk-scroll="">
+
+
+                                                    Terms &amp; Conditions
+
+                                                </a>
+                                            </li>
+                                            <li class="el-item ">
+                                                <a class="el-link" href="#" uk-scroll="">
+
+
+                                                    Privacy
+
+                                                </a>
+                                            </li>
+                                            <li class="el-item ">
+                                                <a class="el-link" href="#" uk-scroll="">
+
+
+                                                    Imprint
+
+                                                </a>
+                                            </li>
+                                            <li class="el-item ">
+                                                <a class="el-link" href="#" uk-scroll="">
+
+
+                                                    Sitemap
+
+                                                </a>
+                                            </li>
+                                        </ul>
+
+
+
+                                    </div>
+                                    <div class="uk-h4"> Follow Us </div>
+                                    <div>
+
+
+
+                                        <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">
+                                            <li class="el-item ">
+                                                <a class="el-link" href="https://www.facebook.com/yootheme">
+
+                                                    <span class="el-image uk-margin-small-right uk-icon"
+                                                        uk-icon="icon: facebook;"><svg width="20" height="20"
+                                                            viewBox="0 0 20 20">
+                                                            <path
+                                                                d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z">
+                                                            </path>
+                                                        </svg></span>
+                                                    Facebook
+
+                                                </a>
+                                            </li>
+                                            <li class="el-item ">
+                                                <a class="el-link" href="https://twitter.com/yootheme?lang=en">
+
+                                                    <span class="el-image uk-margin-small-right uk-icon"
+                                                        uk-icon="icon: twitter;"><svg width="20" height="20"
+                                                            viewBox="0 0 20 20">
+                                                            <path
+                                                                d="m15.08,2.1h2.68l-5.89,6.71,6.88,9.1h-5.4l-4.23-5.53-4.84,5.53H1.59l6.24-7.18L1.24,2.1h5.54l3.82,5.05,4.48-5.05Zm-.94,14.23h1.48L6,3.61h-1.6l9.73,12.71h0Z">
+                                                            </path>
+                                                        </svg></span>
+                                                    Twitter
+
+                                                </a>
+                                            </li>
+                                            <li class="el-item ">
+                                                <a class="el-link"
+                                                    href="https://www.youtube.com/channel/UCScfGdEgRCOh9YJdpGu82eQ">
+
+                                                    <span class="el-image uk-margin-small-right uk-icon"
+                                                        uk-icon="icon: youtube;"><svg width="20" height="20"
+                                                            viewBox="0 0 20 20">
+                                                            <path
+                                                                d="M15,4.1c1,0.1,2.3,0,3,0.8c0.8,0.8,0.9,2.1,0.9,3.1C19,9.2,19,10.9,19,12c-0.1,1.1,0,2.4-0.5,3.4c-0.5,1.1-1.4,1.5-2.5,1.6 c-1.2,0.1-8.6,0.1-11,0c-1.1-0.1-2.4-0.1-3.2-1c-0.7-0.8-0.7-2-0.8-3C1,11.8,1,10.1,1,8.9c0-1.1,0-2.4,0.5-3.4C2,4.5,3,4.3,4.1,4.2 C5.3,4.1,12.6,4,15,4.1z M8,7.5v6l5.5-3L8,7.5z">
+                                                            </path>
+                                                        </svg></span>
+                                                    Youtube
+
+                                                </a>
+                                            </li>
+                                            <li class="el-item ">
+                                                <a class="el-link" href="https://www.instagram.com/">
+
+                                                    <span class="el-image uk-margin-small-right uk-icon"
+                                                        uk-icon="icon: instagram;"><svg width="20" height="20"
+                                                            viewBox="0 0 20 20">
+                                                            <path
+                                                                d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z">
+                                                            </path>
+                                                            <circle cx="14.87" cy="5.26" r="1.09"></circle>
+                                                            <path
+                                                                d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z">
+                                                            </path>
+                                                        </svg></span>
+                                                    Instagram
+
+                                                </a>
+                                            </li>
+                                            <li class="el-item ">
+                                                <a class="el-link" href="https://www.reddit.com/">
+
+                                                    <span class="el-image uk-margin-small-right uk-icon"
+                                                        uk-icon="icon: reddit;"><svg width="20" height="20"
+                                                            viewBox="0 0 20 20">
+                                                            <path
+                                                                d="M19 9.05a2.56 2.56 0 0 0-2.56-2.56 2.59 2.59 0 0 0-1.88.82 10.63 10.63 0 0 0-4.14-1v-.08c.58-1.62 1.58-3.89 2.7-4.1.38-.08.77.12 1.19.57a1.15 1.15 0 0 0-.06.37 1.48 1.48 0 1 0 1.51-1.45 1.43 1.43 0 0 0-.76.19A2.29 2.29 0 0 0 12.91 1c-2.11.43-3.39 4.38-3.63 5.19 0 0 0 .11-.06.11a10.65 10.65 0 0 0-3.75 1A2.56 2.56 0 0 0 1 9.05a2.42 2.42 0 0 0 .72 1.76A5.18 5.18 0 0 0 1.24 13c0 3.66 3.92 6.64 8.73 6.64s8.74-3 8.74-6.64a5.23 5.23 0 0 0-.46-2.13A2.58 2.58 0 0 0 19 9.05zm-16.88 0a1.44 1.44 0 0 1 2.27-1.19 7.68 7.68 0 0 0-2.07 1.91 1.33 1.33 0 0 1-.2-.72zM10 18.4c-4.17 0-7.55-2.4-7.55-5.4S5.83 7.53 10 7.53 17.5 10 17.5 13s-3.38 5.4-7.5 5.4zm7.69-8.61a7.62 7.62 0 0 0-2.09-1.91 1.41 1.41 0 0 1 .84-.28 1.47 1.47 0 0 1 1.44 1.45 1.34 1.34 0 0 1-.21.72z">
+                                                            </path>
+                                                            <path
+                                                                d="M6.69 12.58a1.39 1.39 0 1 1 1.39-1.39 1.38 1.38 0 0 1-1.38 1.39z">
+                                                            </path>
+                                                            <path
+                                                                d="M14.26 11.2a1.39 1.39 0 1 1-1.39-1.39 1.39 1.39 0 0 1 1.39 1.39z">
+                                                            </path>
+                                                            <path
+                                                                d="M13.09 14.88a.54.54 0 0 1-.09.77 5.3 5.3 0 0 1-3.26 1.19 5.61 5.61 0 0 1-3.4-1.22.55.55 0 1 1 .73-.83 4.09 4.09 0 0 0 5.25 0 .56.56 0 0 1 .77.09z">
+                                                            </path>
+                                                        </svg></span>
+                                                    Reddit
+
+                                                </a>
+                                            </li>
+                                        </ul>
+
+
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <header id="hero-header">
+        <div class="uk-section-secondary">
+
+
+            <div uk-slideshow="ratio: false; animation: fade; autoplay: 1;  autoplayInterval: 12000;" id="page#0"
+                class="uk-margin-remove-vertical uk-text-center uk-slideshow" role="region"
+                aria-roledescription="carousel">
+                <div class="uk-position-relative">
+
+
+
+                    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; minHeight: 600;"
+                        aria-live="off" role="presentation"
+                        style="min-width: 100%; max-width: 100%; min-height: max(600px, 100vh);">
+
+                        <li class="el-item uk-inverse-light uk-active uk-transition uk-slide-enter uk-slide-active"
+                            role="group" aria-label="1 of 3" aria-roledescription="slide" tabindex="-1"
+                            style="z-index: -1; transition-property: z-index; transition-duration: 900ms; transition-timing-function: ease;">
+
+
+
+                            <picture>
+                                <img src="assets/images/law_1.jpg" width="1840" height="1078" class="el-image" alt=""
+                                    loading="eager" uk-cover="">
+                            </picture>
+
+
+
+                            <div
+                                class="uk-position-cover transition-duration: 1900ms; uk-overlay uk-animation-fade uk-flex uk-flex-center uk-flex-middle uk-padding">
+                                <div
+                                    class="uk-overlay-dark uk-panel uk-padding-large uk-light uk-margin-remove-first-child">
+
+
+                                    <h2 class="el-title uk-heading-medium uk-margin-top uk-margin-remove-bottom">
+                                        Stevens Law Firm</h2>
+                                    <div class="el-meta uk-h3 uk-margin-small-top uk-margin-remove-bottom">
+                                        Our
+                                        Work is dedicated to the prosperity of our clients.</div>
+
+
+                                    <P>We proudly serve the Myrtle Beach area including Aynor, Loris, Conway,
+                                        Little River, North Myrtle Beach,<br> Marion, Mullins, Pawleys Island, Murrells
+                                        Inlet
+                                        & Georgetown.</P>
+
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="el-item uk-inverse-light uk-active uk-transition uk-slide-enter uk-slide-active"
+                            role="group" aria-label="2 of 3" aria-roledescription="slide" tabindex="-1"
+                            style="z-index: -1; transition-property: z-index; transition-duration: 900ms; transition-timing-function: ease;">
+
+
+
+                            <picture>
+                                <img src="assets/images/law_2.jpg" width="1840" height="1078" class="el-image" alt=""
+                                    uk-cover="">
+                            </picture>
+
+
+
+                            <div class="uk-position-cover uk-overlay  uk-flex uk-flex-center uk-flex-middle uk-padding">
+                                <div
+                                    class="uk-overlay-dark uk-panel uk-padding-large uk-light uk-margin-remove-first-child">
+
+
+                                    <h2 class="el-title uk-heading-medium uk-margin-top uk-margin-remove-bottom">
+                                        Stevens Law Firm</h2>
+                                    <div class="el-meta uk-h3 uk-margin-small-top uk-margin-remove-bottom">
+                                        We proudly serve the Myrtle Beach<br>
+                                        area including Aynor, Loris, Conway,
+                                        Little River, North Myrtle Beach,<br> Marion, Mullins,Pawleys Island, Murrells
+                                        Inlet
+                                        &
+                                        Georgetown.</div>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <li class="el-item uk-inverse-light uk-active uk-transition uk-slide-enter uk-slide-active"
+                            role="group" aria-label="3 of 3" aria-roledescription="slide" tabindex="-2"
+                            style="z-index: -1; transition-property: z-index; transition-duration: 900ms; transition-timing-function: ease;">
+
+
+
+                            <picture>
+                                <img src="assets/images/law_3.jpg" width="1840" height="1078" class="el-image" alt=""
+                                    uk-cover="">
+                            </picture>
+
+
+
+                            <div class="uk-position-cover uk-overlay  uk-flex uk-flex-center uk-flex-middle uk-padding">
+                                <div
+                                    class="uk-overlay-dark uk-panel uk-padding-large uk-light uk-margin-remove-first-child">
+
+
+                                    <h2 class="el-title uk-heading-medium uk-margin-top uk-margin-remove-bottom">
+                                        Stevens Law Firm</h2>
+                                    <div class="el-meta uk-h3 uk-margin-small-top uk-margin-remove-bottom">
+                                        We proudly serve the Myrtle Beach<br>
+                                        area including Aynor, Loris, Conway,
+                                        Little River, North Myrtle Beach,<br> Marion, Mullins,Pawleys Island, Murrells
+                                        Inlet
+                                        &
+                                        Georgetown.</div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+                        uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+                        uk-slideshow-item="next"></a>
+
+                    <div class="uk-position-bottom-center uk-position-small">
+                        <ul class="uk-dotnav">
+                            <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                            <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Demo docs content -->
+    <main id="tm-main">
+
+        <!-- Builder #page -->
+
+        <div class="uk-section-default uk-section uk-section-large"
+            uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-top-small; delay: false;">
+
+            <div class="uk-container uk-container-large">
+                <div class="uk-grid tm-grid-expand uk-grid-small uk-child-width-1-1 uk-grid-margin-small">
+                    <div class="uk-width-1-1@m">
+
+                        <div class="uk-margin uk-text-center">
+                            <div class="uk-grid uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-medium uk-grid-match"
+                                uk-grid="">
+                                <div class="uk-first-column">
+                                    <div class="el-item uk-grid-item-match uk-scrollspy-inview" uk-scrollspy-class="">
+                                        <a class="uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-link-toggle"
+                                            href="/joomla/themes/morgan-consulting/services/tax-planning">
+
+                                            <img src="" width="80" height="60" alt="" loading="eager"
+                                                uk-svg="stroke-animation: true; attributes: uk-scrollspy-class:uk-animation-stroke"
+                                                class="uk-text-primary el-image" hidden=""><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="80" height="60"
+                                                viewBox="0 0 80 60"
+                                                class="uk-text-primary el-image uk-svg uk-scrollspy-inview"
+                                                uk-scrollspy-class="uk-animation-stroke"
+                                                style="--uk-animation-stroke: 244px;">
+                                                <path fill="none" stroke="#b7a088" stroke-width="2"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M52 10h12v44H52zM33 26h12v28H33zM14 40h12v14H14z"></path>
+                                                <path fill="#B59E88"
+                                                    d="M20.16 25.52l-1.55-1.72L35.19 8.89l-3.43-3.81 10.05-.58-1.64 9.93-3.43-3.81-16.58 14.9z">
+                                                </path>
+                                            </svg>
+
+
+                                            <h2 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom"> Auto
+                                                Accidents</h2>
+
+                                            <div class="el-content uk-panel uk-margin-top">
+
+                                                The Stevens Law Firm handles all types of automobile accidents we take a
+                                                personal interest with each case.</div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="el-item uk-grid-item-match uk-scrollspy-inview" uk-scrollspy-class="">
+                                        <a class="uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-link-toggle"
+                                            href="/joomla/themes/morgan-consulting/services/legal-advisory">
+
+                                            <img src="" width="80" height="60" alt="" loading="eager"
+                                                uk-svg="stroke-animation: true; attributes: uk-scrollspy-class:uk-animation-stroke"
+                                                class="uk-text-primary el-image" hidden=""><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="80" height="60"
+                                                viewBox="0 0 80 60"
+                                                class="uk-text-primary el-image uk-svg uk-scrollspy-inview"
+                                                uk-scrollspy-class="uk-animation-stroke"
+                                                style="--uk-animation-stroke: 81px;">
+                                                <path fill="none" stroke="#b7a088" stroke-width="2"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M21 18s6.67-4.5 18.5-4.5S57 18 57 18M39 12v43"></path>
+                                                <path fill="#b7a088" d="M53 56.5H26V55l12-4h2l13 4"></path>
+                                                <path fill="none" stroke="#b7a088" stroke-width="2"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M65.03 39.5c-.2 4.26-3.72 7.67-8.03 7.67s-7.83-3.41-8.02-7.67h16.05z">
+                                                </path>
+                                                <path fill="none" stroke="#b7a088" stroke-width="2"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M63.98 39L57 18.5 49.97 39" stroke-linejoin="round"></path>
+                                                <path fill="none" stroke="#b7a088" stroke-width="2"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M29.03 39.5c-.2 4.26-3.72 7.67-8.03 7.67s-7.83-3.41-8.02-7.67h16.05z">
+                                                </path>
+                                                <path fill="none" stroke="#b7a088" stroke-width="2"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M27.98 39L21 18.5 13.97 39" stroke-linejoin="round"></path>
+                                                <circle cx="39" cy="11.5" r="4.5" fill="#b7a088"></circle>
+                                                <circle cx="21" cy="18" r="2.5" fill="#b7a088"></circle>
+                                                <circle cx="57" cy="18" r="2.5" fill="#b7a088"></circle>
+                                                <circle cx="39" cy="6.5" r="2.5" fill="#b7a088"></circle>
+                                            </svg>
+
+                                            <h2 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">Worker
+                                                Compensation</h2>
+
+
+                                            <div class="el-content uk-panel uk-margin-top">
+
+                                                Have you been injured while working? Employers carry workers
+                                                compensation insurance to cover employees.</div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="el-item uk-grid-item-match uk-scrollspy-inview" uk-scrollspy-class="">
+                                        <a class="uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-link-toggle"
+                                            href="/joomla/themes/morgan-consulting/services/financial-services">
+
+                                            <img src="" width="80" height="60" alt="" loading="eager"
+                                                uk-svg="stroke-animation: true; attributes: uk-scrollspy-class:uk-animation-stroke"
+                                                class="uk-text-primary el-image" hidden=""><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="80" height="60"
+                                                viewBox="0 0 80 60"
+                                                class="uk-text-primary el-image uk-svg uk-scrollspy-inview"
+                                                uk-scrollspy-class="uk-animation-stroke"
+                                                style="--uk-animation-stroke: 157px;">
+                                                <path fill="#b7a088" d="M39 11h2v38h-2z"></path>
+                                                <circle cx="40" cy="30" r="25" fill="none" stroke="#b7a088"
+                                                    stroke-width="2" stroke-linecap="square" stroke-miterlimit="10">
+                                                </circle>
+                                                <path fill="none" stroke="#b7a088" stroke-width="2.4"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M32.19 41.17c.16.17.37.39.64.65.27.27.6.55.98.85.38.3.84.58 1.39.85.55.27 1.17.49 1.87.66.7.17 1.5.25 2.4.25 1.32 0 2.5-.21 3.52-.63 1.03-.42 1.9-.99 2.62-1.71.71-.71 1.26-1.55 1.63-2.5.37-.96.56-1.97.56-3.05 0-.9-.14-1.67-.42-2.33-.28-.65-.66-1.22-1.13-1.69-.48-.47-1.03-.87-1.67-1.21-.63-.34-1.31-.63-2.03-.9-.72-.26-1.46-.51-2.21-.73-.75-.23-1.48-.47-2.21-.74-.72-.27-1.4-.58-2.03-.93-.63-.35-1.19-.77-1.66-1.26-.48-.5-.85-1.09-1.13-1.78-.28-.69-.42-1.5-.42-2.44 0-.91.17-1.79.51-2.62.34-.84.84-1.58 1.49-2.22s1.46-1.15 2.42-1.53c.96-.38 2.06-.57 3.3-.57 1.39 0 2.62.22 3.69.67 1.07.45 2.07 1.16 3.01 2.15">
+                                                </path>
+                                            </svg>
+
+
+
+                                            <h2 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom"> Probate &
+                                                Deeds</h2>
+
+
+                                            <div class="el-content uk-panel uk-margin-top">We handle cases that involve
+                                                disputes arising from wills and deeds created under duress or undue
+                                                influence.</div>
+
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="el-item uk-grid-item-match uk-scrollspy-inview" uk-scrollspy-class="">
+                                        <a class="uk-card uk-card-hover uk-card-body uk-margin-remove-first-child uk-link-toggle"
+                                            href="/joomla/themes/morgan-consulting/services/financial-services">
+
+                                            <img src="" width="80" height="60" alt="" loading="eager"
+                                                uk-svg="stroke-animation: true; attributes: uk-scrollspy-class:uk-animation-stroke"
+                                                class="uk-text-primary el-image" hidden=""><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="80" height="60"
+                                                viewBox="0 0 80 60"
+                                                class="uk-text-primary el-image uk-svg uk-scrollspy-inview"
+                                                uk-scrollspy-class="uk-animation-stroke"
+                                                style="--uk-animation-stroke: 154px;">
+                                                <path fill="none" stroke="#b7a088" stroke-width="2"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M46 8h13v45H21V8h12.5"></path>
+                                                <path fill="none" stroke="#b7a088" stroke-width="2"
+                                                    stroke-linecap="square" stroke-miterlimit="10"
+                                                    d="M34 6h12v5H34zM34.5 31.5l5 5 9-11"></path>
+                                            </svg>
+
+
+                                            <h2 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom"> Public
+                                                Injuries</h2>
+
+                                            <div class="el-content uk-panel uk-margin-top">Unreasonably dangerous
+                                                conditions present in public places or businesses often cause injuries.
+                                            </div>
+
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="uk-section-default">
+            <div data-src="assets/images/home-company-bg-fdd55910.jpeg"
+                data-sources="assets/images/home-company-bg-fdd55910.jpeg" uk-img=""
+                class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-xlarge"
+                uk-parallax="bgy: -100,100; easing: 1; media: @m"
+                style="background-image: url(&quot;https://demo.yootheme.com/joomla/templates/yootheme/cache/cd/home-company-bg-cd7c5380.webp&quot;); background-repeat: no-repeat; will-change: background-position-y, background-size, background-repeat; background-size: 2048px 845px; background-position-y: calc(-200px + max(50%, 0px));">
+
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid-margin-small uk-container">
+                        <div class="uk-grid tm-grid-expand uk-grid-small" uk-grid="">
+                            <div class="uk-width-1-2@m uk-first-column">
+
+
+                                <div
+                                    class="uk-panel uk-margin-remove-first-child uk-width-large uk-margin-auto uk-text-left">
+
+
+                                    <h2 class="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">Trustworthy Legal
+                                        Services</h2>
+
+
+
+                                    <div class="el-content uk-panel uk-margin-top">As Myrtle Beach and Horry county area
+                                        attorneys protecting rights for over 30 years, we have earned our clients'
+                                        trust. </div>
+
+                                    <div class="uk-margin-top"><a href="#"
+                                            class="el-link uk-button uk-button-primary">Our Company</a></div>
+
+
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="uk-width-1-2@m">
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="uk-section-default uk-section uk-section-xsmall">
+
+            <div class="uk-grid tm-grid-expand uk-grid-medium uk-child-width-1-1 uk-grid-margin-medium">
+                <div class="uk-width-1-1@m">
+
+                    <div class="uk-margin uk-text-left">
+                        <div class="uk-grid uk-child-width-1-1 uk-child-width-1-4@s uk-grid-medium" uk-grid="">
+                            <div class="uk-first-column">
+                                <div class="el-item uk-inverse-light">
+                                    <a class="uk-inline-clip uk-transition-toggle uk-link-toggle" href="#">
+
+                                        <picture>
+
+                                            <img src="assets/images/home-company-heads-01-dd2742d6.jpeg" width="640"
+                                                height="680" alt="" loading="lazy"
+                                                class="el-image uk-transition-opaque">
+                                        </picture>
+
+
+                                        <div
+                                            class="uk-position-bottom uk-position-small uk-transition-fade uk-overlay-primary">
+                                            <div class="uk-overlay uk-margin-remove-first-child">
+
+                                                <h3 class="el-title uk-margin-top uk-margin-remove-bottom"> James P.
+                                                    Stevens </h3>
+                                                <div class="el-meta uk-text-meta">Attorney</div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-inverse-light">
+                                    <a class="uk-inline-clip uk-transition-toggle uk-link-toggle" href="#">
+
+
+
+                                        <picture>
+
+                                            <img src="assets/images/home-company-heads-02-e1413fc4.jpeg" width="640"
+                                                height="680" alt="" loading="lazy"
+                                                class="el-image uk-transition-opaque">
+                                        </picture>
+
+                                        <div
+                                            class="uk-position-bottom uk-position-small uk-transition-fade uk-overlay-primary">
+                                            <div class="uk-overlay uk-margin-remove-first-child">
+
+                                                <h3 class="el-title uk-margin-top uk-margin-remove-bottom">Natalie
+                                                    Graziani
+                                                </h3>
+                                                <div class="el-meta uk-text-meta">Attorney</div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="el-item uk-inverse-light">
+                                    <a class="uk-inline-clip uk-transition-toggle uk-link-toggle" href="#">
+
+
+
+                                        <picture>
+
+                                            <img src="assets/images/home-company-heads-03-de6c11ba.jpeg" width="640"
+                                                height="680" alt="" loading="lazy"
+                                                class="el-image uk-transition-opaque">
+                                        </picture>
+
+                                        <div
+                                            class="uk-position-bottom uk-position-small uk-transition-fade uk-overlay-primary">
+                                            <div class="uk-overlay uk-margin-remove-first-child">
+
+                                                <h3 class="el-title uk-margin-top uk-margin-remove-bottom"> Montgomery
+                                                    Kern </h3>
+                                                <div class="el-meta uk-text-meta">Associate</div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="el-item uk-inverse-light">
+                                <a class="uk-inline-clip uk-transition-toggle uk-link-toggle" href="#">
+
+
+
+                                    <picture>
+
+                                        <img src="assets/images/home-company-heads-03-de6c11ba.jpeg" width="640"
+                                            height="680" alt="" loading="lazy" class="el-image uk-transition-opaque">
+                                    </picture>
+
+                                    <div
+                                        class="uk-position-bottom uk-position-small uk-transition-fade uk-overlay-primary">
+                                        <div class="uk-overlay uk-margin-remove-first-child">
+
+                                            <h3 class="el-title uk-margin-top uk-margin-remove-bottom"> Melanie
+                                                Billingsley </h3>
+                                            <div class="el-meta uk-text-meta">Associate</div>
+
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        <div class="uk-section-default uk-section uk-section-large">
+
+            <div class="uk-container uk-container-small">
+                <div class="uk-grid-margin-large uk-container">
+                    <div class="uk-grid tm-grid-expand uk-grid-large" uk-grid="">
+                        <div class="uk-grid-item-match uk-flex-middle uk-width-1-2@s uk-first-column">
+
+                            <div class="uk-panel uk-width-1-1">
+
+                                <div class="uk-panel uk-margin-remove-first-child uk-margin uk-text-left">
+
+                                    <h2 class="el-title uk-h3 uk-margin-top uk-margin-remove-bottom"> Why You Should
+                                        Choose Us </h2>
+
+                                    <div class="el-content uk-panel uk-margin-top">Serving our clients is what drives
+                                        us, we take the time to understand and promote the best possible outcome.</div>
+
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="uk-grid-item-match uk-flex-middle uk-width-1-2@s">
+
+
+
+
+                            <div class="uk-panel uk-width-1-1">
+
+
+                                <div class="uk-heading-xlarge uk-text-primary"> 30+</div>
+                                <div class="uk-h5 uk-text-muted uk-margin-remove-top"> Years of Experience<br> In
+                                    Business </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="uk-section-default uk-section uk-padding-remove-vertical">
+
+
+            <div class="uk-grid tm-grid-expand uk-grid-collapse" uk-grid="">
+                <div class="uk-grid-item-match uk-width-1-2@s uk-first-column">
+                    <div class="uk-tile-default uk-flex">
+                        <div data-src="" data-sources="assets/images/home-contact-01-3f154e6e.jpeg"
+                            uk-img="assets/images/home-contact-01-3f154e6e.jpeg"
+                            class="uk-background-norepeat uk-background-cover uk-background-center-center uk-background-image@s uk-tile uk-width-1-1"
+                            style="background-image: url(&quot;https://demo.yootheme.com/joomla/templates/yootheme/cache/cb/home-contact-01-cbb944f3.webp&quot;);">
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid-item-match uk-light uk-width-1-2@s">
+                    <div class="uk-tile-default uk-flex uk-preserve-color">
+                        <div data-src="/joomla/templates/yootheme/cache/65/home-contact-02-6574710e.jpeg"
+                            data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/joomla\/templates\/yootheme\/cache\/8b\/home-contact-02-8b1d4a9f.webp 768w, \/joomla\/templates\/yootheme\/cache\/bc\/home-contact-02-bc21c9d5.webp 780w, \/joomla\/templates\/yootheme\/cache\/e2\/home-contact-02-e246325f.webp 800w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 780\/780) 100vh&quot;}]"
+                            uk-img=""
+                            class="uk-background-norepeat uk-background-cover uk-background-center-center uk-background-blend-multiply uk-tile  uk-tile-large uk-width-1-1"
+                            style="background-color: rgb(33, 59, 147); background-image: url(/assets/images/home-contact-01-3f154e6e.jpeg);">
+
+                            <div class="uk-position-cover" style="background-color: rgba(33, 59, 147, 0.75);"></div>
+                            <div class="uk-panel uk-width-1-1">
+
+
+                                <h2 class="uk-width-large uk-margin-auto uk-text-left"> Get a Personal Consultation
+                                </h2>
+                                <div class="uk-panel uk-margin uk-width-large uk-margin-auto">Do you need legal
+                                    representation? Need to speak with someone right away?</div>
+                                <div class="uk-margin-large uk-width-large uk-margin-auto">
+                                    <div class="uk-flex-middle uk-grid-medium uk-child-width-auto uk-grid" uk-grid="">
+
+                                        <div class="el-item uk-first-column">
+
+
+                                            <a class="el-content uk-button uk-button-primary" href="tel:+8436630127">
+
+                                                Click to Call
+
+                                            </a>
+
+                                        </div>
+
+
+                                        <div class="el-item">
+
+
+                                            <a class="el-content" href="tel:+8436630127">
+
+                                                Phone: (843) 663-0127
+
+                                            </a>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section-default uk-section uk-section-large"
+                uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: 200;">
+
+                <!--<div class="uk-container">
+                    <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+                        <div class="uk-width-1-1@m">
+                            <h2 class="uk-margin-large uk-text-center uk-scrollspy-inview" uk-scrollspy-class="">
+                                Our<span class="uk-text-primary"> Clients</span> </h2>
+                            <div class="uk-margin-medium uk-text-center">
+                                <div class="uk-grid uk-child-width-1-2 uk-child-width-1-4@s uk-grid-large" uk-grid="">
+                                    <div class="uk-first-column">
+                                        <div class="el-item uk-light">
+                                            <a class="uk-inline-clip uk-link-toggle"
+                                                href="/joomla/themes/morgan-consulting/projects/cwe-group">
+
+
+
+                                                <img src="/assets/images/home-clients-01.svg" width="225.167"
+                                                    height="62.167" alt="" loading="lazy"
+                                                    class="el-image uk-transition-opaque">
+
+
+
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="el-item uk-light">
+                                            <a class="uk-inline-clip uk-link-toggle"
+                                                href="/joomla/themes/morgan-consulting/projects/cwe-group">
+
+
+
+                                                <img src="/assets/images/home-clients-02.svg" width="225.167"
+                                                    height="62.167" alt="" loading="lazy"
+                                                    class="el-image uk-transition-opaque">
+
+
+
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="el-item uk-light">
+                                            <a class="uk-inline-clip uk-link-toggle"
+                                                href="/joomla/themes/morgan-consulting/projects/cwe-group">
+
+
+
+                                                <img src="/assets/images/home-clients-03.svg" width="225.167"
+                                                    height="62.167" alt="" loading="lazy"
+                                                    class="el-image uk-transition-opaque">
+
+
+
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="el-item uk-light">
+                                            <a class="uk-inline-clip uk-link-toggle"
+                                                href="/joomla/themes/morgan-consulting/projects/cwe-group">
+
+
+
+                                                <img src="/assets/images/home-clients-04.svg" width="225.167"
+                                                    height="62.167" alt="" loading="lazy"
+                                                    class="el-image uk-transition-opaque">
+
+
+
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-margin uk-first-column">
+                                        <div class="el-item uk-light">
+                                            <a class="uk-inline-clip uk-link-toggle"
+                                                href="/joomla/themes/morgan-consulting/projects/cwe-group">
+
+
+
+                                                <img src="/assets/images/home-clients-05.svg" width="225.167"
+                                                    height="62.167" alt="" loading="lazy"
+                                                    class="el-image uk-transition-opaque">
+
+
+
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-margin">
+                                        <div class="el-item uk-light">
+                                            <a class="uk-inline-clip uk-link-toggle"
+                                                href="/joomla/themes/morgan-consulting/projects/cwe-group">
+
+
+
+                                                <img src="/assets/images/home-clients-06.svg" width="225.167"
+                                                    height="62.167" alt="" loading="lazy"
+                                                    class="el-image uk-transition-opaque">
+
+
+
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-margin">
+                                        <div class="el-item uk-light">
+                                            <a class="uk-inline-clip uk-link-toggle"
+                                                href="/joomla/themes/morgan-consulting/projects/cwe-group">
+
+
+
+                                                <img src="/assets/images/home-clients-07.svg" width="225.167"
+                                                    height="62.167" alt="" loading="lazy"
+                                                    class="el-image uk-transition-opaque">
+
+
+
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-margin">
+                                        <div class="el-item uk-light">
+                                            <a class="uk-inline-clip uk-link-toggle"
+                                                href="/joomla/themes/morgan-consulting/projects/cwe-group">
+
+
+
+                                                <img src="/assets/images/home-clients-08.svg" width="225.167"
+                                                    height="62.167" alt="" loading="lazy"
+                                                    class="el-image uk-transition-opaque">
+
+
+
+
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>-->
+
+
+
+            </div>
+
+
+
+
+            <div class="uk-section-default uk-preserve-color uk-light uk-position-relative">
+                <div data-src="/joomla/themes/morgan-consulting/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22..%2Fdemo%2Fmorgan-consulting%2Fimages%2Fcompany-cta-bg.jpg%22%2C%22thumbnail%22%3A%221560%2C%2C%22%7D&amp;hash=d4e4465b"
+                    data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/joomla\/themes\/morgan-consulting\/component\/ajax\/?p=image&amp;src=%7B%22file%22%3A%22..%2Fdemo%2Fmorgan-consulting%2Fimages%2Fcompany-cta-bg.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%22768%2C288%2C%22%7D&amp;hash=3408d65f 768w, \/joomla\/themes\/morgan-consulting\/component\/ajax\/?p=image&amp;src=%7B%22file%22%3A%22..%2Fdemo%2Fmorgan-consulting%2Fimages%2Fcompany-cta-bg.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%221024%2C384%2C%22%7D&amp;hash=91628866 1024w, \/joomla\/templates\/yootheme\/cache\/28\/company-cta-bg-28910755.webp 1366w, \/joomla\/themes\/morgan-consulting\/component\/ajax\/?p=image&amp;src=%7B%22file%22%3A%22..%2Fdemo%2Fmorgan-consulting%2Fimages%2Fcompany-cta-bg.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%221560%2C%2C%22%7D&amp;hash=2acc0f27 1560w, \/joomla\/templates\/yootheme\/cache\/e1\/company-cta-bg-e1e6cb6b.webp 1600w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 1560\/585) 267vh&quot;}]"
+                    uk-img=""
+                    class="uk-background-norepeat uk-background-cover uk-background-center-center uk-background-blend-multiply uk-section uk-section-large"
+                    style="background-color: rgba(55, 82, 170, 0.9); background-image: url(&quot;https://demo.yootheme.com/joomla/templates/yootheme/cache/e1/company-cta-bg-e1e6cb6b.webp&quot;);">
+
+                    <div class="uk-position-cover" style="background-color: rgba(30, 54, 132, 0.89);"></div>
+
+
+                    <div class="uk-container uk-position-relative">
+                        <div class="uk-grid tm-grid-expand uk-grid-small uk-child-width-1-1 uk-margin-large">
+                            <div class="uk-width-1-1@m">
+
+
+
+
+
+
+
+                                <div
+                                    class="uk-panel uk-margin-remove-first-child uk-margin-xlarge uk-width-large uk-margin-auto uk-text-center">
+
+
+
+
+
+
+
+
+
+
+
+                                    <h2 class="el-title uk-h3 uk-margin-top uk-margin-remove-bottom"> Follow Us on
+                                        LinkedIn
+                                    </h2>
+
+
+
+
+                                    <div class="el-content uk-panel uk-margin-top">At Stevens Law Firm, we're not just
+                                        legal experts – we're your partners in navigating complex legal issues. Whether
+                                        you need advice, are facing a challenge, or want to stay updated on legal
+                                        trends, our team is here to support you.</div>
+
+                                    <div class="uk-margin-top"><a
+                                            href="https://www.linkedin.com/company/stevens-law-firm-pc" uk-scroll=""
+                                            class="el-link uk-button uk-button-default">Visit our page</a></div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <!-- Builder #footer -->
+
+
+        <div class="uk-section-secondary uk-section uk-section-small">
+
+
+
+
+
+            <div class="uk-container">
+                <div class="uk-grid tm-grid-expand uk-grid-large uk-margin-large" uk-grid="">
+
+
+
+
+                </div>
+                <div class="uk-grid tm-grid-expand uk-grid-large uk-grid-margin-large" uk-grid="">
+                    <div class="uk-width-1-2@s uk-width-1-4@m uk-first-column">
+
+
+
+
+
+
+
+                        <h2 class="uk-h6 uk-text-left@s uk-text-center"> Company </h2>
+                        <ul class="uk-list uk-text-left@s uk-text-center">
+
+
+                            <li class="el-item">
+                                <div class="el-content uk-panel"><a href="#"
+                                        class="el-link uk-link-muted uk-margin-remove-last-child">Our Story</a>
+                                </div>
+                            </li>
+
+                            <li class="el-item">
+                                <div class="el-content uk-panel"><a href="#"
+                                        class="el-link uk-link-muted uk-margin-remove-last-child">Meet the Team</a>
+                                </div>
+                            </li>
+                            <li class="el-item">
+                                <div class="el-content uk-panel"><a href="#"
+                                        class="el-link uk-link-muted uk-margin-remove-last-child">Contact</a></div>
+                            </li>
+
+
+                        </ul>
+
+
+
+
+                    </div>
+                    <div class="uk-width-1-2@s uk-width-1-4@m">
+
+
+
+
+
+
+
+                        <h2 class="uk-h6 uk-text-left@s uk-text-center"> Careers </h2>
+                        <ul class="uk-list uk-text-left@s uk-text-center">
+
+
+                            <li class="el-item">
+                                <div class="el-content uk-panel"><a
+                                        href="/joomla/themes/morgan-consulting/company/careers"
+                                        class="el-link uk-link-muted uk-margin-remove-last-child">Open Jobs</a>
+                                </div>
+                            </li>
+                            <li class="el-item">
+                                <div class="el-content uk-panel"><a
+                                        href="/joomla/themes/morgan-consulting/company/careers"
+                                        class="el-link uk-link-muted uk-margin-remove-last-child">Our Offices</a>
+                                </div>
+                            </li>
+
+                            <li class="el-item">
+                                <div class="el-content uk-panel"><a href="/joomla/themes/morgan-consulting/company"
+                                        class="el-link uk-link-muted uk-margin-remove-last-child">Meet the Team</a>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
+
+
+
+                    </div>
+                    <div class="uk-width-1-2@s uk-width-1-4@m">
+
+
+
+
+
+
+
+                        <h2 class="uk-h6 uk-text-left@s uk-text-center"> Location </h2>
+                        <ul class="uk-list uk-text-left@s uk-text-center">
+
+
+                            <li class="el-item">
+                                <div class="el-content uk-panel"><a href="#"
+                                        class="el-link uk-link-muted uk-margin-remove-last-child">1603 N Kings
+                                        Hwy, North Myrtle Beach, SC 29582</a></div>
+                            </li>
+                            <li class="el-item">
+                                <div class="el-content uk-panel"><a href="#"
+                                        class="el-link uk-link-muted uk-margin-remove-last-child">Phone:(843)
+                                        663-0127</a></div>
+                            </li>
+
+
+
+                        </ul>
+
+
+                    </div>
+                    <div class="uk-width-1-2@s uk-width-1-4@m">
+
+                        <h2 class="uk-h6 uk-text-left@s uk-text-center"> Follow us </h2>
+                        <div class="uk-margin uk-text-left@s uk-text-center"
+                            uk-scrollspy="target: [uk-scrollspy-class];">
+                            <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-grid" uk-grid="">
+                                <div class="uk-first-column">
+                                    <a class="el-link" href="https://www.linkedin.com/company/stevens-law-firm-pc"
+                                        target="_blank" rel="noreferrer"><span uk-icon="icon: linkedin;"
+                                            class="uk-icon"></span></a>
+                                </div>
+                                <div>
+                                    <a class="el-link" href="https://facebook.com/stevenslawfirmSC" target="_blank"
+                                        rel="noreferrer"><span uk-icon="icon: facebook;" class="uk-icon"></span></a>
+                                </div>
+                                <div>
+                                    <a class="el-link" href="https://twitter.com/stevens-law-firm" target="_blank"
+                                        rel="noreferrer"><span uk-icon="icon: twitter;" class="uk-icon"></span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="uk-section-secondary uk-section uk-section-small"
+            uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-left-small; delay: false;">
+
+
+
+            <div class="uk-container">
+                <div class="uk-grid tm-grid-expand uk-grid-column-medium uk-grid-row-large uk-grid-margin-large"
+                    uk-grid="">
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-expand@s uk-first-column">
+
+
+
+
+                        <div class="uk-panel uk-width-1-1">
+
+
+                            <div class="uk-margin-remove-bottom uk-text-left@s uk-text-center uk-scrollspy-inview"
+                                uk-scrollspy-class="" style="">
+                                <ul class="uk-margin-remove-bottom uk-subnav  uk-subnav-divider uk-flex-left@s uk-flex-center"
+                                    uk-margin="">
+                                    <li class="el-item uk-first-column">
+                                        <a class="el-link" href="#" uk-scroll="">Terms of Use</a>
+                                    </li>
+                                    <li class="el-item ">
+                                        <a class="el-link" href="#" uk-scroll="">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="uk-panel uk-text-small uk-text-muted uk-margin-small uk-text-left@s uk-text-center uk-scrollspy-inview"
+                                uk-scrollspy-class="" style="">©
+                                <script> document.currentScript.insertAdjacentHTML('afterend', '<time datetime="' + new Date().toJSON() + '">' + new Intl.DateTimeFormat(document.documentElement.lang, { year: 'numeric' }).format() + '</time>'); </script>
+                                <time datetime="2024-05-09T13:12:04.954Z">2024</time> Stevens Law Firm. All rights
+                                reserved.</a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-auto@s">
+
+
+                        <div class="uk-panel uk-width-1-1">
+
+
+                            <div class="uk-position-relative uk-margin-medium uk-text-right@s uk-text-center uk-scrollspy-inview"
+                                uk-scrollspy-class="" style=""><a href="#" title="#" uk-totop="" uk-scroll=""
+                                    class="uk-icon uk-totop" role="button" aria-label="Back to top"><svg width="15"
+                                        height="22" viewBox="0 0 15 20">
+
+                                    </svg></a></div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>
